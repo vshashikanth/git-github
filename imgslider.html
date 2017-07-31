@@ -1,0 +1,64 @@
+<html> 
+<head> 
+<style type='text/css'> 
+#outerbox {
+width:700px;
+overflow:hidden;
+}
+#sliderbox {
+  position:relative;
+  width:2800px;
+  animation-name: test;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation:test 20s infinite;   
+}
+#sliderbox img {
+  float:left;
+}
+@keyframes test {
+0% {
+left: 0px;
+}
+20% {
+
+  left:0px;
+}
+25% {
+  left: -700px;
+}
+45% {
+  left: -700px;
+}
+50% {
+  left: -1400px;
+}
+70% {
+  left: -1400px;
+}
+75% {
+  left:-2100px;
+}
+95% {
+  left: -2100px;
+
+}
+100% {
+  left:-2800px;
+}
+}
+
+</style> 
+</head>
+<body>
+   <div id="outerbox">
+   <div id="sliderbox">
+    <img src="img1.jpg" width="500" height="350"/>
+    <img src="img2.jpg"/>
+    <img src="img3.jpg" width="500" height="350"/>
+    <img src="rose1.jpg" width="500" height="350"/>
+  </div>
+  </div>
+
+</body>
+</html>
